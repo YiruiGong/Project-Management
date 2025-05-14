@@ -10,7 +10,7 @@ package studyapplication;
  */
 public class StudyApplication {
     
-    //sahadad gong ewaz
+    //sahadad gong ewaz thomias
     
     public static void main(String[] args) {
         // TODO code application logic here
