@@ -9,10 +9,9 @@ package studyapplication;
  * @author ThFil1696
  */
 public class StudyApplication {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    //sahadad gong
+    
     public static void main(String[] args) {
         // TODO code application logic here
     }
