@@ -6,7 +6,7 @@ package studyapplication;
 
 /**
  *
- * @author ThFil1696
+ * @author ThFil1696 dumb
  */
 public class StudyApplication {
     
