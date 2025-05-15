@@ -1,1 +1,60 @@
-
+What is the most expensive stage of the SDLC to correct a mistake in?
+1) Analysis
+2) Design
+3) Maintenance
+4) Integration
+3
+What is not a phase of the Waterfall Model
+1) Reassembly
+2) Analysis
+3) Implementation
+4) Problem Statement
+1
+Why is the Gantt Chart important?
+1) It helps hide secret projects
+2) It increases the pay of everybody working on a project
+3) It helps visualize and track scheduled progress
+4) To track the amount of money in a project
+3
+Why is Unified Modeling Language useful?
+1) Allows you to describe 3D models as 2D models
+2) Models the amount of money in your project
+3) Turns your software into a 3D printable model
+4) Easier to describe complex software designs
+4
+Why is the Waterfall Model useful?
+1) Visualizes your code as a real-world waterfall
+2) Allows you to reverse and redo work in previous phases
+3) Allows you to terminate the development life cycle in code
+4) Allows you to program your code backwards for easier understanding
+2
+Who developed the Waterfall Model?
+1) Henry Gantt
+2) Dr Winston Royce
+3) Yirui Gong
+4) Dr John G. Frederick
+2
+What is not a useful tool for project management communication?
+1) Daily Logs
+2) Online Messenger
+3) UML
+4) Carrier Pigeon
+4
+What does SDLC mean?
+1) Software Development Life Cycle
+2) Software Diversionary Line Conversion
+3) Software Designed for Linux Computers
+4) Software Development Lifespan Catalyst
+1
+What does a system primarily involve?
+1) Programmers, Game Designers, Quality Assurance
+2) Core Users, Observers, Testers, Utilization
+3) Client, Analyst, Developers, Testers, Users
+4) Designer, Engineer, Lawyer
+3
+What is a good measurement of success in terms of software?
+1) Project follows a very simple design
+2) You are unhappy with the final project
+3) Project solves what it was meant to solve
+4) Project fufills you emotionally
+3
