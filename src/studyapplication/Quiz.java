@@ -30,6 +30,10 @@ public class Quiz {
         return options;
     }
     
+    public int getAnswer() {
+        return answer;
+    }
+    
     public String toString() {
         return question + "\n" + options;
     }
