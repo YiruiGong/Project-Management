@@ -28,10 +28,10 @@ public class StudyApplication {
         return num;
     }
     
-    public static ArrayList<Quiz> readQuizFile() {
+    public static ArrayList<Quiz> readQuizFile(String filePath) {
         ArrayList<Quiz> quiz = new ArrayList<Quiz>();
         try {
-            File f = new File("src/studyapplication/quiz");
+            File f = new File(filePath);
             Scanner s = new Scanner(f);
             while (s.hasNextLine()) {
                 quiz.add(new Quiz(s.nextLine(), s.nextLine(), Integer.parseInt(s.nextLine())));
@@ -42,9 +42,25 @@ public class StudyApplication {
         return quiz;
     }
     
+    public static ArrayList<Notes> readNotesFile(String filePath) {
+        ArrayList<Notes> notes = new ArrayList<Notes>();
+        try {
+            File f = new File(filePath);
+            Scanner s = new Scanner(f);
+            while (s.hasNextLine()) {
+                notes.add(new Notes(s.nextLine(), s.nextLine()));
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Error: " + e);
+        }
+        return notes;
+    }
+    
     public static void main(String[] args) {
         boolean done = false;
         int option;
+        ArrayList<Quiz> quiz = readQuizFile("src/studyapplication/quiz1.txt");
+        ArrayList<Notes> notes = readNotesFile("src/studyapplication/notes.txt");
         while (!done) {
             
         }
