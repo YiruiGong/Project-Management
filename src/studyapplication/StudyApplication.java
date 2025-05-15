@@ -18,6 +18,9 @@ public class StudyApplication {
         int num = -1;
         while (!goodInput) {
             String input = JOptionPane.showInputDialog(msg);
+            if (input == null) {
+                return -1;
+            }
             try {
                 num = Integer.parseInt(input);
                 goodInput = true;
@@ -34,7 +37,9 @@ public class StudyApplication {
         int userInput = 0;
         while (!goodInput) {
             userInput = checkInputInt(msg);
-            if (userInput >= lowRange && userInput <= highRange) {
+            if (userInput == -1) {
+                return -1;
+            } else if (userInput >= lowRange && userInput <= highRange) {
                 goodInput = true;
             } else {
                 JOptionPane.showMessageDialog(null, "", "INVALID INPUT", JOptionPane.ERROR_MESSAGE);
@@ -66,7 +71,9 @@ public class StudyApplication {
             File f = new File(filePath);
             Scanner s = new Scanner(f);
             while (s.hasNextLine()) {
-                notes.add(new Notes(s.nextLine(), s.nextLine()));
+                String topic = s.nextLine();
+                String note = s.nextLine();
+                notes.add(new Notes(topic, note));
             }
         } catch (FileNotFoundException e) {
             System.out.println("Error: " + e);
@@ -80,6 +87,9 @@ public class StudyApplication {
         int acheivedPoints = 0;
         for (int i = 0; i < quiz.size(); i ++) {
             userAnswer = checkInput(quiz.get(i).toString(), 1, 4);
+            if (userAnswer == -1) {
+                return;
+            }
             boolean correct = quiz.get(i).checkAnswer(userAnswer);
             if (correct) {
                 acheivedPoints ++;
@@ -98,9 +108,11 @@ public class StudyApplication {
             for (int i = 0; i < notes.size(); i ++) {
                 topics += "\n" + (i + 1) + ". " + notes.get(i).getTopic();
             }
-            topics += "\n" + (notes.size() + 2) + ". " + "Exit";
-            userTopic = checkInput(topics, 1, notes.size() + 2);
-            if (userTopic == notes.size() + 2) {
+            topics += "\n" + (notes.size() + 1) + ". " + "Exit";
+            userTopic = checkInput(topics, 1, notes.size() + 1);
+            if (userTopic == -1) {
+                return;
+            } else if (userTopic == notes.size() + 1) {
                 done = true;
             } else {
                 JOptionPane.showMessageDialog(null, notes.get(userTopic - 1).toString());
@@ -114,11 +126,11 @@ public class StudyApplication {
         ArrayList<Quiz> quiz = readQuizFile("src/studyapplication/quiz1.txt");
         ArrayList<Notes> notes = readNotesFile("src/studyapplication/notes.txt");
         while (!done) {
-            option = checkInput("Project Management Project\n1. Notes\n2. Quiz\n 3. Exit", 1, 3); 
+            option = checkInput("Project Management Project\n1. Notes\n2. Quiz\n3. Exit", 1, 3); 
             if (option == 1) {
-                showQuiz(quiz);
-            } else if (option == 2) {
                 showNotes(notes);
+            } else if (option == 2) {
+                showQuiz(quiz);
             } else {
                 done = true;
             }
