@@ -1,19 +1,16 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+Yirui Gong, Thimithy Timias Tanderson The III, Sahadad Ewaz
+May 15, 2025
+
+*/
 package studyapplication;
 
-/**
- *
- * @author ThFil1696 dumb e hi
- */
+
 public class StudyApplication {
-    
-    //sahadad gong ewaz thomiasggggg
+
     
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
 }
