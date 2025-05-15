@@ -9,7 +9,8 @@ public class Notes {
     
     public Notes(String topic, String notes) {
         this.topic = topic;
-        this.notes = notes;
+        String n = notes.replaceAll("~", "\n");
+        this.notes = n;
     }
     
     public String getTopic() {
