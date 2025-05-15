@@ -85,6 +85,7 @@ public class StudyApplication {
         DecimalFormat percentage = new DecimalFormat("##.0%");
         int userAnswer = 0;
         int acheivedPoints = 0;
+        String incorrect = "Incorrect Questions";
         for (int i = 0; i < quiz.size(); i ++) {
             userAnswer = checkInput(quiz.get(i).toString(), 1, 4);
             if (userAnswer == -1) {
@@ -93,10 +94,12 @@ public class StudyApplication {
             boolean correct = quiz.get(i).checkAnswer(userAnswer);
             if (correct) {
                 acheivedPoints ++;
+            } else {
+                incorrect += "\nQuestion " + (i + 1) + " -     Your Answer: " + userAnswer + "     Correct Answer: " + quiz.get(i).getAnswer();
             }
         }
         double grade = ((double) acheivedPoints) / quiz.size();
-        String results = "Your Score: " + acheivedPoints + " / " + quiz.size() + "\nPercentage Grade: " + percentage.format(grade);
+        String results = "Your Score: " + acheivedPoints + " / " + quiz.size() + "\nPercentage Grade: " + percentage.format(grade) + "\n" + incorrect;
         JOptionPane.showMessageDialog(null, results);
     }
     
