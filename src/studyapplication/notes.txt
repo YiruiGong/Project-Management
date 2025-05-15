@@ -1,11 +1,11 @@
 Familiar Projects
 Developing projects involves a process:\n Movies (Script and storyboard).\nScience Experiment (scientific method.\nConstruction (blueprint).
 A System
-a combination of software that provides a solution for a problem involves:\nThe client (the request and $).\n Analysts.\nDesigners & developers.\n Testers.\n Users.\n Others( e.g. lawyers, communications officers, specialists etc).
+a combination of software that provides a solution for a problem involves:\nThe client (the request and $).\nAnalysts.\nDesigners & developers.\nTesters.\nUsers.\nOthers( e.g. lawyers, communications officers, specialists etc).
 Measuring Success
-Success may be measured by answering the following questions:\nDoes the project solve what it meant to solve?\nIs it easy to maintain and administer?\nIs it scalable to meet the needs of the client?\nIs there a successful support system in place for the client?\n Was it delivered on time and ready to go?\n Was the client happy with the finished product?
+Success may be measured by answering the following questions:\nDoes the project solve what it meant to solve?\nIs it easy to maintain and administer?\nIs it scalable to meet the needs of the client?\nIs there a successful support system in place for the client?\nWas it delivered on time and ready to go?\nWas the client happy with the finished product?
 The Software Development Process
-Creating high-quality software involves organization, planning and utilizing various diagrammatic conventions.\nComputer scientists have created a view of the software development process known as the "SOFTWARE DEVELOPMENT LIFE CYCLE" (SDLC).\nOne method is known as the "waterfall method".\nA mistake made in one phase often requires the developer to backup and redo some of the work in the previous phase.
+Creating high-quality software involves organization, planning and utilizing various diagrammatic conventions.\nComputer scientists have created a view of the software development process known as the "SOFTWARE DEVELOPMENT LIFE CYCLE"(SDLC).\nOne method is known as the "waterfall method".\nA mistake made in one phase often requires the developer to backup and redo some of the work in the previous phase.
 The Waterfall Model
 Developed by Dr Winston Royce in 1970 based on his experience developing software for spacecraft mission planning.\nThe Waterfall Model consists of several phases:\nProblem Statement.\nAnalysis.\nDesign.\nImplementation.\nIntergration / Test.\nMaintenance.
 The Software Development Process Part 2
