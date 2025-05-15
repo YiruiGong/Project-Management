@@ -31,7 +31,7 @@ public class Quiz {
     }
     
     public String toString() {
-        return question + "?\n" + options;
+        return question + "\n" + options;
     }
 
 }
