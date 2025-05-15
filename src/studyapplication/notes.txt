@@ -1,1 +1,22 @@
-
+Familiar Projects
+Developing projects involves a process:\n Movies (Script and storyboard).\nScience Experiment (scientific method.\nConstruction (blueprint).
+A System
+a combination of software that provides a solution for a problem involves:\nThe client (the request and $).\n Analysts.\nDesigners & developers.\n Testers.\n Users.\n Others( e.g. lawyers, communications officers, specialists etc).
+Measuring Success
+Success may be measured by answering the following questions:\nDoes the project solve what it meant to solve?\nIs it easy to maintain and administer?\nIs it scalable to meet the needs of the client?\nIs there a successful support system in place for the client?\n Was it delivered on time and ready to go?\n Was the client happy with the finished product?
+The Software Development Process
+Creating high-quality software involves organization, planning and utilizing various diagrammatic conventions.\nComputer scientists have created a view of the software development process known as the "SOFTWARE DEVELOPMENT LIFE CYCLE" (SDLC).\nOne method is known as the "waterfall method".\nA mistake made in one phase often requires the developer to backup and redo some of the work in the previous phase.
+The Waterfall Model
+Developed by Dr Winston Royce in 1970 based on his experience developing software for spacecraft mission planning.\nThe Waterfall Model consists of several phases:\nProblem Statement.\nAnalysis.\nDesign.\nImplementation.\nIntergration / Test.\nMaintenance.
+The Software Development Process Part 2
+The waterfall model of the software development life cycle goes as followed.\nAnalysis.\nDesign.\nImplementation.\nTesting.\nDeployment & Maintenance.
+The Software Development Process Part 3
+Mistakes found early in the SDLC are much less expensive to correct than those found much later
+The Software Development process Part 4
+The Cost of developing software is not spread equally over the phases.\nWith Integration,Implementation,Design and Analysis getting 8% each.\nWhile Maintenance gets 68% of the costs.
+Project Management Tools
+Some tools may include:\nGantt Chart.\nUML.\nDaily Log.\nWeekly Reports.\nCommunications (Microsoft Teams,Slack, Google Spaces).
+Gantt Chart
+Developed by mechanical engineer Henry Gantt in the 1910's.\nTool typically used by people working on large project (hoover Dam, Eisenhower National Defense, Interstate Highway System).\nHelps project managers to visualize,schedule, and track scheduled as well as actual progress of projects.
+UML
+Unified Modeling Language.\nVisually specifies parts of a system.\nComplex software designs are much more easily described through UML than textually.\nUML can be complicated to learn, you are not required to use it for your projects.
