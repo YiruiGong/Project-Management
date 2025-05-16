@@ -26,7 +26,7 @@ public class StudyApplication {
                 num = Integer.parseInt(input);
                 goodInput = true;
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Error", "ERROR", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error: Please enter a number", "ERROR", JOptionPane.ERROR_MESSAGE);
                 goodInput = false;
             }
         }
@@ -43,7 +43,7 @@ public class StudyApplication {
             } else if (userInput >= lowRange && userInput <= highRange) {
                 goodInput = true;
             } else {
-                JOptionPane.showMessageDialog(null, "", "INVALID INPUT", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error: Please enter a valid number", "INVALID INPUT", JOptionPane.ERROR_MESSAGE);
             }
         }
         return userInput;
@@ -61,7 +61,7 @@ public class StudyApplication {
                 quiz.add(new Quiz(question, options, answer));
             }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e, "ERROR", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Error: " + e, "ERROR", JOptionPane.ERROR_MESSAGE);
         }
         return quiz;
     }
@@ -77,7 +77,7 @@ public class StudyApplication {
                 notes.add(new Notes(topic, note));
             }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e, "ERROR", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Error: " + e, "ERROR", JOptionPane.ERROR_MESSAGE);
         }
         return notes;
     }
