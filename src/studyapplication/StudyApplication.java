@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.text.DecimalFormat;
 
 public class StudyApplication {
@@ -51,7 +52,7 @@ public class StudyApplication {
     public static ArrayList<Quiz> readQuizFile(String filePath) {
         ArrayList<Quiz> quiz = new ArrayList<Quiz>();
         try {
-            File f = new File(filePath);
+            InputStream f = StudyApplication.class.getResourceAsStream(filePath);
             Scanner s = new Scanner(f);
             while (s.hasNextLine()) {
                 String question = s.nextLine();
@@ -59,8 +60,8 @@ public class StudyApplication {
                 int answer = Integer.parseInt(s.nextLine());
                 quiz.add(new Quiz(question, options, answer));
             }
-        } catch (FileNotFoundException e) {
-            System.out.println("Error: " + e);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e, "ERROR", JOptionPane.ERROR_MESSAGE);
         }
         return quiz;
     }
@@ -68,15 +69,15 @@ public class StudyApplication {
     public static ArrayList<Notes> readNotesFile(String filePath) {
         ArrayList<Notes> notes = new ArrayList<Notes>();
         try {
-            File f = new File(filePath);
+            InputStream f = StudyApplication.class.getResourceAsStream(filePath);
             Scanner s = new Scanner(f);
             while (s.hasNextLine()) {
                 String topic = s.nextLine();
                 String note = s.nextLine();
                 notes.add(new Notes(topic, note));
             }
-        } catch (FileNotFoundException e) {
-            System.out.println("Error: " + e);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e, "ERROR", JOptionPane.ERROR_MESSAGE);
         }
         return notes;
     }
@@ -126,8 +127,8 @@ public class StudyApplication {
     public static void main(String[] args) {
         boolean done = false;
         int option;
-        ArrayList<Quiz> quiz = readQuizFile("src/studyapplication/quiz1.txt");
-        ArrayList<Notes> notes = readNotesFile("src/studyapplication/notes.txt");
+        ArrayList<Quiz> quiz = readQuizFile("quiz1.txt");
+        ArrayList<Notes> notes = readNotesFile("notes.txt");
         while (!done) {
             option = checkInput("Project Management Project\n1. Notes\n2. Quiz\n3. Exit", 1, 3); 
             if (option == 1) {
